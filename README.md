@@ -1,4 +1,4 @@
-## 🏥 MediCare – Simplifying Healthcare for Rural India
+# 🏥 **MediCare – Simplifying Healthcare for Rural India**
 📌 **Project Overview**
 
 MediCare is a lightweight, mobile-first web platform built to improve healthcare access in rural and semi-urban India. It helps users find nearby hospitals, book appointments, store medical records, and get basic symptom analysis through an AI chatbot — all in one place.
