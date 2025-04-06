@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vi+ewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCare - Hospital Finder</title>
+    <link rel="stylesheet" href="web2.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html" class="logo">MediCare</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="wbs.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html#services">Services</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li>
+                    <li><a href="searchHospital.html">Search Hospital</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search for Locations & Specialities..." class="search-bar">
+        <button class="search-btn">🔍</button>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <h2>Hospitals</h2>
+        <p>Access India's Largest Network of Advanced Multi-Specialty Healthcare Facilities, Diagnostics, and Medical Expertise</p>
+
+        <!-- Hospital Cards -->
+        <div class="hospital-card">
+            <img src="hospital1.png" alt="LNJP Hospital">
+            <div class="hospital-info">
+                <h3>LNJP Hospital</h3>
+                <div class="address">
+                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.9987 13.6666C4.84314 13.6666 4.70981 13.6221 4.5987 13.5333C4.48759 13.4444 4.40425 13.3277 4.3487 13.1833C4.13759 12.561 3.87092 11.9777 3.5487 11.4333C3.23759 10.8888 2.7987 10.2499 2.23203 9.51658C1.66536 8.78325 1.20425 8.08325 0.848698 7.41658C0.504253 6.74992 0.332031 5.94436 0.332031 4.99992C0.332031 3.69992 0.782031 2.59992 1.68203 1.69992C2.59314 0.788807 3.6987 0.333252 4.9987 0.333252C6.2987 0.333252 7.3987 0.788807 8.2987 1.69992C9.20981 2.59992 9.66537 3.69992 9.66537 4.99992C9.66537 6.01103 9.47092 6.85547 9.08203 7.53325C8.70425 8.19992 8.26537 8.86103 7.76537 9.51658C7.16536 10.3166 6.70981 10.9833 6.3987 11.5166C6.0987 12.0388 5.8487 12.5944 5.6487 13.1833C5.59314 13.3388 5.50425 13.461 5.38203 13.5499C5.27092 13.6277 5.14314 13.6666 4.9987 13.6666ZM4.9987 6.66658C5.46537 6.66658 5.85981 6.50547 6.18203 6.18325C6.50425 5.86103 6.66536 5.46658 6.66536 4.99992C6.66536 4.53325 6.50425 4.13881 6.18203 3.81658C5.85981 3.49436 5.46537 3.33325 4.9987 3.33325C4.53203 3.33325 4.13759 3.49436 3.81536 3.81658C3.49314 4.13881 3.33203 4.53325 3.33203 4.99992C3.33203 5.46658 3.49314 5.86103 3.81536 6.18325C4.13759 6.50547 4.53203 6.66658 4.9987 6.66658Z" fill="#007C9D"></path>
+                    </svg>
+                    <span>
+                        Bye pass road, Darra Khera, Kalyan Nagar, Thanesar, Darra Khera Thanesar, Haryana 136118
+                    </span>
+                </div>
+                <div class="phone-links">
+					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.665 10.28V12.28C13.6657 12.4657 13.6277 12.6494 13.5533 12.8195C13.479 12.9897 13.3699 13.1424 13.233 13.2679C13.0962 13.3934 12.9347 13.489 12.7588 13.5485C12.5829 13.6079 12.3966 13.63 12.2117 13.6133C10.1602 13.3904 8.18966 12.6894 6.45833 11.5667C4.84755 10.5431 3.48189 9.17743 2.45833 7.56665C1.33165 5.82745 0.63049 3.84731 0.411661 1.78665C0.395001 1.60229 0.416911 1.41649 0.475995 1.24107C0.535078 1.06564 0.630042 0.904443 0.754838 0.767731C0.879635 0.631019 1.03153 0.52179 1.20086 0.446998C1.37018 0.372206 1.55322 0.333491 1.73833 0.333317H3.73833C4.06187 0.330132 4.37552 0.444702 4.62084 0.655672C4.86615 0.866641 5.02638 1.15961 5.07166 1.47998C5.15608 2.12003 5.31263 2.74847 5.53833 3.35332C5.62802 3.59193 5.64744 3.85126 5.59427 4.10057C5.5411 4.34988 5.41757 4.57872 5.23833 4.75998L4.39166 5.60665C5.3407 7.27568 6.72263 8.65761 8.39166 9.60665L9.23833 8.75998C9.41959 8.58074 9.64843 8.45722 9.89774 8.40405C10.1471 8.35088 10.4064 8.37029 10.645 8.45998C11.2498 8.68568 11.8783 8.84224 12.5183 8.92665C12.8422 8.97234 13.1379 9.13545 13.3493 9.38498C13.5608 9.63451 13.6731 9.95303 13.665 10.28Z" fill="#007C9D"></path>
+					</svg>
+					<span>
+					<a href="tel:%2B914847185000">01123236000 </a>											</span>
+				</div>
+                <div class="directions-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.25C3.71969 0.25 0.25 3.71969 0.25 8C0.25 12.2803 3.71969 15.75 8 15.75C12.2803 15.75 15.75 12.2803 15.75 8C15.75 3.71969 12.2803 0.25 8 0.25ZM11.445 5.55438L8.44656 12.0509C8.09656 12.8006 6.99719 12.5506 6.99719 11.7513V9.0025H4.24844C3.44875 9.0025 3.19906 7.90313 3.94875 7.55312L10.4453 4.55469C11.0453 4.305 11.695 4.95469 11.445 5.55438Z" fill="#007C9D"></path>
+                    </svg>
+                    <span>
+                        <a href="https://maps.app.goo.gl/Grdm33QN71E8K6QB8" target="_blank">Get Hospital Directions</a>
+                    </span>
+                </div>
+                <a href="#" class="btn">Know More</a>
+                <a href="appointment.html" class="btn">Book Appointment</a>
+            </div>
+        </div>
+
+        <div class="hospital-card">
+            <img src="hospital2.png" alt="Saraswati Mission Hospita">
+            <div class="hospital-info">
+                <h3>Saraswati Mission Hospita</h3>
+                <p>Saini Samaj Bhawan, Chowk, near Birla Mandir, Railway Station Aea, Kurukshetra, Thanesar, Haryana 136118</p>
+                <p>Phone: 01744270939</p>
+                <div class="directions-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.25C3.71969 0.25 0.25 3.71969 0.25 8C0.25 12.2803 3.71969 15.75 8 15.75C12.2803 15.75 15.75 12.2803 15.75 8C15.75 3.71969 12.2803 0.25 8 0.25ZM11.445 5.55438L8.44656 12.0509C8.09656 12.8006 6.99719 12.5506 6.99719 11.7513V9.0025H4.24844C3.44875 9.0025 3.19906 7.90313 3.94875 7.55312L10.4453 4.55469C11.0453 4.305 11.695 4.95469 11.445 5.55438Z" fill="#007C9D"></path>
+                    </svg>
+                    <span>
+                        <a href="https://maps.app.goo.gl/fLgKFShykigp92an6" target="_blank">Get Hospital Directions</a>
+                    </span>
+                </div>
+                <a href="#" class="btn">Know More</a>
+                <a href="appointment.html" class="btn">Book Appointment</a>
+            </div>
+        </div>
+        
+        <div class="hospital-card">
+            <img src="hospital3.png" alt="Anand Orthopaedic Hospital">
+            <div class="hospital-info">
+                <h3>Anand Orthopaedic Hospital</h3>
+                <p>railway station area, Railway Station Aea, Thanesar, Haryana 136118</p>
+                <p>Availability: 9AM-6PM</p>
+                <div class="directions-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.25C3.71969 0.25 0.25 3.71969 0.25 8C0.25 12.2803 3.71969 15.75 8 15.75C12.2803 15.75 15.75 12.2803 15.75 8C15.75 3.71969 12.2803 0.25 8 0.25ZM11.445 5.55438L8.44656 12.0509C8.09656 12.8006 6.99719 12.5506 6.99719 11.7513V9.0025H4.24844C3.44875 9.0025 3.19906 7.90313 3.94875 7.55312L10.4453 4.55469C11.0453 4.305 11.695 4.95469 11.445 5.55438Z" fill="#007C9D"></path>
+                    </svg>
+                    <span>
+                        <a href="https://maps.app.goo.gl/YbjPQuhA8ELHCDKL8" target="_blank">Get Hospital Directions</a>
+                    </span>
+                </div>
+                <a href="#" class="btn">Know More</a>
+                <a href="appointment.html" class="btn">Book Appointment</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Request a Callback Form -->
+    <div class="callback-form">
+        <h2>Request a Callback</h2>
+        <p>Could not find what you are looking for?</p>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Mobile Number">
+        <button>Send OTP</button>
+        <input type="text" placeholder="Enter OTP">
+        <button>Submit</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 MedCare. All Rights Reserved. | 
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Use</a>
+    </div>
+    <!-- Chatbot Button -->
+    <div id="chatbot-container">
+        <button id="chatbot-toggle">💬 Expert's Advice</button>
+        <div id="chatbot-box">
+            <div id="chatbot-header">Chat with MedCare Assistant</div>
+            <div id="chatbot-messages"></div>
+            <input type="text" id="chatbot-input" placeholder="Ask me anything...">
+            <button id="chatbot-send">Send</button>
+        </div>
+    </div>
+
+    <!-- <script src="https://www.gstatic.com/_/mss/boq-bard-web/_/js/k=boq-bard-web.BardChatUi.en_IN.J4wS4xD5M_w.es5.O/am=v0Ow4Oiv3t7iP8c5BqACwA/d=1/excm=_b/ed=1/dg=0/wt=2/ujg=1/rs=AL3bBk3_7t-uFUOFi-4mo01Fr95uVpNW3Q/m=_b?wli=BardChatUi.jOkM3UxtfRU.loadWasmSipCoca.O%3A%3B" id="base-js" nonce></script> -->
+    <script src="searchHospital2.js"></script>
+    <!-- <script type="module" src="./lazy_load.js"></script> -->
+</body>
+</html>
