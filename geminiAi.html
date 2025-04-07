@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical AI Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #007BFF;
+    }
+
+    input[type="text"] {
+      width: 60%;
+      padding: 10px;
+      font-size: 18px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #response {
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Medical AI Assistant</h1>
+<input type="text" id="query" placeholder="Search medical topics like 'fever', 'diabetes'..." />
+<button onclick="getMedicalInfo()">Search</button>
+
+<div id="response"></div>
+
+<script>
+  const data = {
+    "fever": "Fever is a temporary increase in your body temperature, often due to an illness. It's a sign that something unusual is happening in your body. Common causes include infections, inflammation, or heat exhaustion.",
+    "diabetes": "Diabetes is a chronic condition that affects how your body turns food into energy. It causes high blood sugar levels. Type 1 and Type 2 are the most common forms. Symptoms include frequent urination, increased thirst, and fatigue.",
+    "covid": "COVID-19 is a respiratory illness caused by the coronavirus SARS-CoV-2. Symptoms include fever, cough, fatigue, and loss of taste or smell. It spreads through respiratory droplets.",
+    "headache": "Headaches can have various causes including stress, tension, dehydration, eye strain, or medical conditions like migraines. Drink water, rest, and manage stress to prevent them.",
+    "asthma": "Asthma is a condition in which your airways narrow and swell, producing extra mucus. This can make breathing difficult. Symptoms include wheezing, shortness of breath, and coughing.",
+    "bp": "High blood pressure (hypertension) can lead to heart problems if left untreated. Maintain a healthy diet, reduce salt, exercise, and monitor your BP regularly."
+  };
+
+  function getMedicalInfo() {
+    const query = document.getElementById('query').value.trim().toLowerCase();
+    const responseDiv = document.getElementById('response');
+
+    if (query === '') {
+      responseDiv.innerHTML = '<p>Please enter a search term.</p>';
+      return;
+    }
+
+    const keys = Object.keys(data);
+    const matched = keys.find(k => query.includes(k));
+    
+    if (matched) {
+      responseDiv.innerHTML = `<h3>Result for "${matched}":</h3><p>${data[matched]}</p>`;
+    } else {
+      responseDiv.innerHTML = '<p>Sorry, I do not have information on that topic yet.</p>';
+    }
+  }
+</script>
+
+</body>
+</html>
